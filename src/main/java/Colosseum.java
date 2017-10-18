@@ -98,14 +98,17 @@ public class Colosseum {
         int pointOne = firstPokemon.hitPoints;
         int pointTwo = secondPokemon.hitPoints;
 
-        if (pointOne > pointTwo) {
-            System.out.println(firstPokemon + " " + "is currently ahead");
-        } else {
-            System.out.println(secondPokemon + " " + "is currently ahead");
-        }
+        if (pointOne > 1 && pointTwo > 1) {
+            if (pointOne > pointTwo) {
+                System.out.println(firstPokemon + " " + "is currently ahead");
+            } else {
+                System.out.println(secondPokemon + " " + "is currently ahead");
+            }
 
-        if (pointOne == pointTwo){
-            System.out.println("Tie");
+            if (pointOne == pointTwo) {
+                System.out.println("Tie");
+            }
+
         }
 
 
